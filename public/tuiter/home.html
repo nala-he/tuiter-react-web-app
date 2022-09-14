@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- the style block below is referred from
+    https://stackoverflow.com/questions/35341081/how-to-have-vertical-line-between-table-cells
+    It is used to group and format the Reply, Retuit, Like, and Share for each tuit-->
+    <style>
+        table tr td {
+            border-right: 1px solid grey;
+        }
+        table tr td:last-of-type {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="navigation.html">Back</a>
+
+    <h1>Tuiter</h1>
+
+    <h2>Home</h2>
+
+    <img width="48px" height="48px" src="don'tpanic.jpg"/></br>
+
+    <textarea placeholder="What's happening?"></textarea></br>
+
+    <select>
+        <option value="EVERYONE" selected>Everyone can reply</option>
+        <option value="FOLLOWING">People you follow</option>
+        <option value="MENTIONED">Only people you mention</option>
+    </select><hr>
+
+    <input type="file"/>
+    <button>Tuit</button><hr>
+
+    <ul>
+        <li>
+            <a href="topic.html">Topic 123</a></br>
+            <img width="48px" height="48px" src="https://en-academic.com/pictures/enwiki/81
+/Quacker_The_Duck.JPG"/>
+            <a href="profile.html">Yutong</a>
+            @yutong - 2h
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                with desktop publishing software like Aldus PageMaker including versions of Lorem
+                Ipsum.
+            </p>
+            <table>
+                <tr>
+                    <!-- The use of &nbsp; is referred from
+                    https://www.wikihow.com/Insert-Spaces-in-HTML-->
+                    <td><a href="reply.html">Reply</a>&nbsp;123&nbsp;</td>
+                    <td><a href="retuit.html">Retuit</a>&nbsp;234&nbsp;</td>
+                    <td><a href="like.html">Like</a>&nbsp;345&nbsp;</td>
+                    <td><a href="share.html">Share</a></td>
+                </tr>
+            </table>
+        </li><br/>
+        <li>
+            <a href="topic.html">Topic 234</a></br>
+            <img width="48px" height="48px" src="https://i.etsystatic.com/21080537/r/il/89b9ae
+/3692948188/il_570xN.3692948188_2s3e.jpg"/>
+            <a href="profile.html">Korok</a> @korok - 4h
+            <p>
+                Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i
+                slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od
+                16-og stoljeća, kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih
+                da bi napravio knjigu s uzorkom tiska. Taj je tekst ne samo preživio pet stoljeća,
+                već se i vinuo u svijet elektronskog slovoslagarstva, ostajući u suštini
+                nepromijenjen. Postao je popularan tijekom 1960-ih s pojavom Letraset listova s
+                odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om za stolno izdavaštvo kao
+                što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.
+            </p>
+            <table>
+                <tr>
+                    <td><a href="reply.html">Reply</a>&nbsp;123&nbsp;</td>
+                    <td><a href="retuit.html">Retuit</a>&nbsp;234&nbsp;</td>
+                    <td><a href="like.html">Like</a>&nbsp;345&nbsp;</td>
+                    <td><a href="share.html">Share</a></td>
+                </tr>
+            </table><br/>
+        </li>
+    </ul>
+</body>
+</html>
