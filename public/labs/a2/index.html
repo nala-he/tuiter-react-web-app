@@ -239,13 +239,24 @@ id est laborum.</textarea>
 
     Checkout my <a href="other-page.html">other page</a>
 
+    <h2>Table of Content</h2>
+    <ul>
+        <li><a href="#embedding-website">Embedding other websites</a></li>
+        <li><a href="#embedding-youtube">Embedding Youtube</a></li>
+        <li><a href="#embedding-slide">Embedding Google slides</a></li>
+    </ul>
+
+    <a name="embedding-website"></a>
     <h2>Embedding other websites</h2>
+    <a href="#top">Top</a><br/>
     <iframe width="600"
             height="400"
             src="https://www.metmuseum.org/">
     </iframe>
 
+    <a name="embedding-youtube"></a>
     <h2>Embedding YouTube</h2>
+    <a href="#top">Top</a><br/>
     <iframe width="560" height="315"
             src="https://www.youtube.com/embed/Eh-W8QDVA9s"
             title="YouTube video player"
@@ -255,7 +266,9 @@ picture-in-picture"
             allowfullscreen>
     </iframe>
 
+    <a name="embedding-slide"></a>
     <h2>Embedding Google slides</h2>
+    <a href="#top">Top</a><br/>
     <iframe src="https://docs.google.com/presentation/d/e
 /2PACX-1vSvqhcwLzsY2987smEWQ6EgXmmokQeSBHEJYug2Y_372b6QAUWxkmqacHVos0dq9m6rr76BKiVudOoY
 /embed?start=false&loop=false&delayms=3000"
@@ -266,14 +279,37 @@ picture-in-picture"
             webkitallowfullscreen="true">
     </iframe>
 
-    <h2>Drawing rectangles</h2>
+    <h2>Table of Content</h2>
+    <ul>
+        <li><a href="#draw-rectangle">Drawing rectangles</a></li>
+        <li><a href="#draw-circle">Drawing circles</a></li>
+        <li><a href="#draw-polygon">Drawing polygons</a></li>
+    </ul>
 
+    <a name="draw-rectangle"></a>
+    <h2>Drawing rectangles</h2>
+    <a href="#top">Top</a><br/>
     <svg width="300" height="100">
         <rect width="300" height="100"
               style="fill:rgb(200,255,100); stroke-width:10;
    stroke:rgb(0,0,0)" />
     </svg>
 
+    <a name="draw-circle"></a>
+    <h2>Drawing circles</h2>
+    <a href="#top">Top</a><br/>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"
+                stroke="orange" stroke-width="4" fill="blue" />
+    </svg>
+
+    <a name="draw-polygon"></a>
+    <h2>Drawing polygons</h2>
+    <a href="#top">Top</a><br/>
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+                 style="fill:lime; stroke:purple; stroke-width:5; fill-rule:evenodd;" />
+    </svg>
 
 </body>
 </html>
