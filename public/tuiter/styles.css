@@ -1,0 +1,48 @@
+.wd-whole-page {
+    background-color: black;
+    color: rgb(110, 118, 125);
+    font-family: "Arial";
+    font-weight: bold;
+    /*overflow-x: hidden;*/
+}
+
+.wd-border-color {
+    color: rgb(47, 51, 54);
+}
+
+.wd-row {
+    float: left;
+    width: 100%;
+}
+
+.wd-pos-left-16 {
+    position: relative;
+    left: 16px;
+}
+
+.wd-post-topic-info {
+    font-size: 13px;
+    color: rgb(47, 51, 54);
+}
+
+.wd-post-title {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-post-left-col {
+    float: left;
+    width: 60%;
+}
+
+.wd-post-right-col {
+    float: left;
+    width: 40%;
+}
+
+.wd-dot {
+    float: right;
+    position: relative;
+    right: 16px;
+}
+
