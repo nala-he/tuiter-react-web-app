@@ -1,0 +1,153 @@
+/** {*/
+/*    outline: 1px solid red;*/
+/*}*/
+
+.wd-whole-page {
+    background-color: black;
+    color: rgb(110, 118, 125);
+    font-family: "Arial";
+    font-weight: bold;
+    /*overflow-x: hidden;*/
+}
+
+.wd-border-color {
+    color: rgb(47, 51, 54);
+}
+
+.wd-row {
+    float: left;
+    width: 100%;
+
+    /*position: relative;*/
+    /*left: 16px;*/
+}
+
+.wd-pos-left-16 {
+    position: relative;
+    left: 16px;
+}
+
+.wd-search-input-field {
+    /*float: left;*/
+    width: 60%;
+    position: relative;
+    background-color: #282828;
+    color: gray;
+    left: 16px;
+    padding: 8px 23px 8px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.wd-search-icon {
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    left: 28px;
+    width: 18px;
+    background-color: #282828;
+    color: gray;
+    padding: 2px 2px;
+    border-radius: 50px;
+    /*cursor: pointer;*/
+}
+
+.wd-gear-icon {
+    position: relative;
+    float: right;
+    right: 12px;
+    top: 5px;
+    width: 25px;
+}
+
+.wd-navbar {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wd-row ul {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wd-row li {
+    list-style-type: none;
+    float: left;
+    display: inline;
+    font-size: 15px;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wd-highlight {
+    color: rgb(29,161,242);
+    padding-bottom: 9px;
+    border-bottom: 3px solid rgb(29,161,242);
+    border-radius: 2px;
+}
+
+.wd-separate-bar {
+    float: left;
+    height: 8px;
+    background-color: #282828;
+    border-top: solid rgb(47, 51, 54);
+    border-bottom: solid rgb(47, 51, 54);
+    width: 100%;
+}
+
+.wd-suggest-post {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    line-height: 20px;
+    border-bottom: solid rgb(47, 51, 54);
+}
+
+.wd-post-topic-info {
+    font-size: 13px;
+    color: rgb(47, 51, 54);
+}
+
+.wd-post-title {
+    font-size: 15px;
+    color: #d7d7d7;
+}
+
+.wd-post-author {
+    font-size: 13px;
+    color: #d7d7d7;
+}
+
+.wd-post-left-col {
+    float: left;
+    width: 60%;
+}
+
+.wd-post-right-col {
+    float: left;
+    width: 40%;
+}
+
+.wd-post-photo {
+    float: right;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    right: 16px;
+}
+
+.wd-logo-round-corner {
+    border-radius: 5px;
+}
+
+.wd-dot {
+    float: right;
+    position: relative;
+    right: 16px;
+}
+
+
