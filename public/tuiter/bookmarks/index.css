@@ -1,10 +1,14 @@
-/** {*/
-/*    outline: 1px solid red;*/
-/*}*/
-
 .wd-bookmark-title {
     color: white;
     font-size: 20px;
+}
+
+.wd-page-col {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    border-left: 1px solid;
+    border-right: 1px solid;
 }
 
 .wd-bottom-border {

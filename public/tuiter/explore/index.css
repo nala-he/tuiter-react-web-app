@@ -1,13 +1,16 @@
-/** {*/
-/*    outline: 1px solid red;*/
-/*}*/
-
 .wd-whole-page {
     background-color: black;
     color: rgb(110, 118, 125);
     font-family: "Arial";
     font-weight: bold;
-    /*overflow-x: hidden;*/
+}
+
+.wd-page-col {
+    position: absolute;
+    left: 30px;
+    right: 10px;
+    border-left: 1px solid;
+    border-right: 1px solid;
 }
 
 .wd-border-color {
@@ -17,9 +20,6 @@
 .wd-row {
     float: left;
     width: 100%;
-
-    /*position: relative;*/
-    /*left: 16px;*/
 }
 
 .wd-pos-left-16 {
@@ -28,7 +28,6 @@
 }
 
 .wd-search-input-field {
-    /*float: left;*/
     width: 60%;
     position: relative;
     background-color: #282828;
@@ -43,14 +42,13 @@
 .wd-search-icon {
     position: absolute;
     z-index: 2;
-    top: 12px;
-    left: 28px;
+    top: 5px;
+    left: 18px;
     width: 18px;
     background-color: #282828;
     color: gray;
     padding: 2px 2px;
     border-radius: 50px;
-    /*cursor: pointer;*/
 }
 
 .wd-gear-icon {
