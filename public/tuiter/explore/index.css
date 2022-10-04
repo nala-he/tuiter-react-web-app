@@ -1,26 +1,26 @@
-.wd-whole-page {
-    background-color: black;
-    color: rgb(110, 118, 125);
-    font-family: "Arial";
-    font-weight: bold;
-}
+/** {*/
+/*    outline: 1px solid red;*/
+/*}*/
 
-.wd-page-col {
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    border-left: 1px solid;
-    border-right: 1px solid;
-}
+.fa-stack.small { font-size: 0.5em; }
+i { vertical-align: middle; }
+
+/*.wd-page-col {*/
+/*    position: absolute;*/
+/*    left: 10px;*/
+/*    right: 10px;*/
+/*    border-left: 1px solid;*/
+/*    border-right: 1px solid;*/
+/*}*/
 
 .wd-border-color {
     color: rgb(47, 51, 54);
 }
 
-.wd-row {
-    float: left;
-    width: 100%;
-}
+/*.wd-row {*/
+/*    float: left;*/
+/*    width: 100%;*/
+/*}*/
 
 .wd-pos-left-16 {
     position: relative;
@@ -28,35 +28,29 @@
 }
 
 .wd-search-input-field {
-    width: 60%;
+    width: 80%;
     position: relative;
-    background-color: #282828;
-    color: gray;
-    left: 16px;
-    padding: 8px 23px 8px 30px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
+    float: left;
+    /*background-color: white;*/
+    padding: 3px 23px 3px 30px;
+    /*border: solid rgb(47, 51, 54);*/
+    border-radius: 5rem;
+    /*cursor: pointer;*/
 }
 
 .wd-search-icon {
-    position: absolute;
-    z-index: 2;
+    position: relative;
+    float: left;
+    z-index: 10;
     top: 5px;
-    left: 18px;
-    width: 18px;
-    background-color: #282828;
-    color: gray;
+    left: 26px;
     padding: 2px 2px;
-    border-radius: 50px;
 }
 
 .wd-gear-icon {
     position: relative;
     float: right;
     right: 12px;
-    top: 5px;
-    width: 25px;
 }
 
 .wd-navbar {
