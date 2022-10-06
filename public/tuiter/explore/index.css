@@ -5,11 +5,6 @@
 .fa-stack.small { font-size: 0.5em; }
 i { vertical-align: middle; }
 
-.wd-row {
-    float: left;
-    width: 100%;
-}
-
 .wd-rounded-border-5 {
     border-radius: 5rem;
 }
@@ -22,8 +17,11 @@ i { vertical-align: middle; }
     font-weight: bold;
 }
 
-.wd-post-photo {
-    float: right;
-    position: relative;
-    width: 100%;
+.wd-min-width-40 {
+    min-width: 40px;
+}
+
+.wd-width-limits {
+    min-width: 70px;
+    max-width: 90px;
 }
