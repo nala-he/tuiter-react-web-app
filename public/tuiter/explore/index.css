@@ -5,141 +5,25 @@
 .fa-stack.small { font-size: 0.5em; }
 i { vertical-align: middle; }
 
-/*.wd-page-col {*/
-/*    position: absolute;*/
-/*    left: 10px;*/
-/*    right: 10px;*/
-/*    border-left: 1px solid;*/
-/*    border-right: 1px solid;*/
-/*}*/
-
-.wd-border-color {
-    color: rgb(47, 51, 54);
-}
-
-/*.wd-row {*/
-/*    float: left;*/
-/*    width: 100%;*/
-/*}*/
-
-.wd-pos-left-16 {
-    position: relative;
-    left: 16px;
-}
-
-.wd-search-input-field {
-    width: 80%;
-    position: relative;
+.wd-row {
     float: left;
-    /*background-color: white;*/
-    padding: 3px 23px 3px 30px;
-    /*border: solid rgb(47, 51, 54);*/
+    width: 100%;
+}
+
+.wd-rounded-border-5 {
     border-radius: 5rem;
-    /*cursor: pointer;*/
 }
 
-.wd-search-icon {
-    position: relative;
-    float: left;
+.wd-z-index {
     z-index: 10;
-    top: 5px;
-    left: 26px;
-    padding: 2px 2px;
 }
 
-.wd-gear-icon {
-    position: relative;
-    float: right;
-    right: 12px;
-}
-
-.wd-navbar {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.wd-navbar ul {
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.wd-navbar li {
-    list-style-type: none;
-    float: left;
-    display: inline;
-    font-size: 15px;
-    padding: 16px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.wd-highlight {
-    color: rgb(29,161,242);
-    padding-bottom: 9px;
-    border-bottom: 3px solid rgb(29,161,242);
-    border-radius: 2px;
-}
-
-.wd-separate-bar {
-    float: left;
-    height: 8px;
-    background-color: #282828;
-    border-top: 1px solid rgb(47, 51, 54);
-    border-bottom: 1px solid rgb(47, 51, 54);
-    width: 100%;
-}
-
-.wd-suggest-post {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: 100%;
-    line-height: 20px;
-    border-bottom: 1px solid rgb(47, 51, 54);
-}
-
-.wd-post-topic-info {
-    font-size: 13px;
-    color: rgb(47, 51, 54);
-}
-
-.wd-post-title {
-    font-size: 15px;
-    color: white;
-}
-
-.wd-post-author {
-    font-size: 13px;
-    color: white;
-}
-
-.wd-post-left-col {
-    float: left;
-    width: 60%;
-}
-
-.wd-post-right-col {
-    float: left;
-    width: 40%;
+.wd-weight-bold {
+    font-weight: bold;
 }
 
 .wd-post-photo {
     float: right;
     position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 16px;
-    right: 16px;
+    width: 100%;
 }
-
-.wd-logo-round-corner {
-    border-radius: 5px;
-}
-
-.wd-dot {
-    float: right;
-    position: relative;
-    right: 16px;
-}
-
-

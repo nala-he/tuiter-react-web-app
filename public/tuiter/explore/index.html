@@ -16,10 +16,10 @@
           rel="stylesheet"/>
 </head>
 <body>
-<div class="container pt-1">
+<div class="container pt-2">
     <div class="row">
         <div class="col-2 col-sm-2 col-md-3 col-lg-1 col-xl-2">
-            <div class="list-group">
+            <div class="list-group" id="wd-navigation">
                 <span class="list-group-item list-group-item-action">
                     <i class="fab fa-twitter"></i><br/>
                 </span>
@@ -107,133 +107,131 @@
                         </div>
                     </div>
                 </a>
+                <button type="button" href="#" class="btn btn-primary border-0 wd-rounded-border-5
+                mt-2 w-100 text-sm-center">
+                    <span>Tuit</span>
+                </button>
             </div>
+
         </div>
         <div class="col-10 col-sm-10 col-md-9 col-lg-8 col-xl-6">
-            <div class="form-group">
-                <span class="fa fa-search form-control-feedback wd-search-icon"></span>
-                <input type="text" class="form-control wd-search-input-field"
-                       placeholder="Search Twitter">
-                <a href="explore-settings.html">
-                    <i class="fas fa-cog wd-gear-icon fa-2x" style="color: rgb(29,161,242)"></i>
-                </a>
-            </div>
-
-            <div class="wd-border-color">
-                <div class="wd-row">
-<!--                    <i class="fas fa-search"></i>-->
-<!--                    <input type="text" class="wd-search-input-field"-->
-<!--                           placeholder="Search Tuiter"/>-->
-
-
+            <div id="wd-main-column">
+                <div class="form-group row row-cols-12" id="wd-search-bar">
+                    <div class="col-10 position-relative">
+                        <button type="submit" class="wd-rounded-border-5 wd-z-index
+                        position-absolute ps-2 pt-1 bg-transparent border-0" href="#">
+                            <i class="fa fa-search form-control-feedback"></i>
+                        </button>
+                        <input type="text" class="form-control form-control-md wd-rounded-border-5
+                        position-relative ps-5" placeholder="Search Tuiter">
+                    </div>
+                    <div class="col-2 position-relative">
+                        <a href="explore-settings.html">
+                            <i class="fas fa-cog fa-2x btn-primary"></i>
+                        </a>
+                    </div>
                 </div>
-                <br/><br/>
-                <div class="wd-row wd-navbar">
-                    <ul>
-                        <li><span class="wd-highlight">For you</span></li>
-                        <li>Trending</li>
-                        <li>COVID-19</li>
-                        <li>News</li>
-                        <li>Sports</li>
-                        <li>Entertainment</li>
+
+                <div class="mt-2" id="wd-nav-bar">
+                    <ul class="nav nav-tabs justify-content-start">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">For you</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link" href="#">Entertainment</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="wd-row wd-separate-bar"></div>
-                <div class="wd-row wd-suggest-post">
-                    <div class="wd-post-left-col">
-                        <span class="wd-pos-left-16 wd-post-topic-info">Trending in Science</span><br/>
-                        <span class="wd-pos-left-16 wd-post-title">Starship</span><br/>
-                        <span class="wd-pos-left-16 wd-post-topic-info">55.5K Tuits</span>
+
+                <div class="mt-2 mb-2 border border-1 rounded-bottom" id="wd-posts">
+                    <div class="position-relative">
+                        <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day
+.jpg?w=1390&crop=1" width="100%"/>
+                        <h1 class="text-white position-absolute bottom-0 ps-2 wd-z-index">
+                            SpaceX's Starship
+                        </h1>
                     </div>
-                    <div class="wd-post-right-col">
-                        <span class="wd-dot wd-post-title">···</span><br/>
-                        <span class="wd-dot">···</span>
+                    <div class="row row-cols-12 m-0 position-relative border border-bottom-1">
+                        <div class="col-10 position-relative pt-2 pb-2">
+                            <span class="text-secondary">Web Development</span><br/>
+                            <span class="text-dark wd-weight-bold">ReactJS&nbsp;</span>
+                            <i class="fas fa-check-circle wd-weight-bold pb-1"></i>
+                            <span class="text-secondary">&nbsp;-&nbsp;2h&nbsp;
+                            </span><br/>
+                            <span class="text-dark wd-weight-bold">React.js is a component based
+                                front end library that makes it very easy to build Single Page
+                                Applications or SPAs</span>
+                        </div>
+                        <div class="col-2 position-relative pt-2">
+                            <img class="rounded-4 wd-post-photo pb-2 mb-2"
+                                 src="https://repository-images.githubusercontent.com/78664391
+/f7e46780-6bf6-11eb-999f-8212c69d76bc"/>
+                        </div>
                     </div>
-                    <br/><br/><br/><br/>
-                    <div class="wd-post-left-col">
-                        <span class="wd-pos-left-16 wd-post-topic-info">Sports · Trending</span><br/>
-                        <span class="wd-pos-left-16 wd-post-title">Joe Rogan</span><br/>
-                        <span class="wd-pos-left-16 wd-post-topic-info">5,218 Tuits</span>
+
+                    <div class="row row-cols-12 m-0 position-relative border border-bottom-1">
+                        <div class="col-10 position-relative pt-2 pb-2">
+                            <span class="text-dark wd-weight-bold">JavaScript&nbsp;</span>
+                            <i class="fas fa-check-circle wd-weight-bold pb-1"></i>
+                            <span class="text-secondary">&nbsp;-&nbsp;2h</span><br/>
+                            <span class="text-dark wd-weight-bold">JavaScript is programming
+                                language that can run on browsers as well as desktops</span><br/>
+                            <span class="text-secondary">123K&nbsp;Tweets</span>
+                        </div>
+                        <div class="col-2 position-relative pt-2">
+                            <img class="rounded-4 wd-post-photo mb-2"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99
+/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"/>
+                        </div>
                     </div>
-                    <div class="wd-post-right-col">
-                        <span class="wd-dot">···</span>
+
+                    <div class="row row-cols-12 m-0 position-relative border border-bottom-1">
+                        <div class="col-10 position-relative pt-2 pb-2">
+                            <span class="text-secondary">Web Development</span><br/>
+                            <span class="text-dark wd-weight-bold">jQuery&nbsp;</span><br/>
+                            <span class="text-secondary">123K&nbsp;Tweets</span>
+                        </div>
+                        <div class="col-2 position-relative pt-2">
+                            <img class="rounded-4 wd-post-photo mb-2"
+                                 src="https://openjsf.org/wp-content/uploads/sites/84/2019/10
+/jquery-logo-vertical_large_square.png"/>
+                        </div>
                     </div>
-                    <br/></div>
-                <div class="wd-row wd-suggest-post">
-                    <div class="wd-post-left-col">
-                        <img class="wd-pos-left-16" height="12px" src="nyt_logo.png"/>
-                        <span class="wd-post-author">&nbsp &nbsp &nbsp The New York Times &nbsp </span>
-                        <img height="12px" src="check_logo.png"/>
-                        <span class="wd-post-topic-info"> · Yesterday</span>
-                        <br/>
-                        <span class="wd-pos-left-16 wd-post-title">CNN's Cuomo conundrum: A star anchor with a
-                    brother in
-                trouble</span>
-                    </div>
-                    <div class="wd-post-right-col">
-                        <img class="wd-post-photo"
-                             src="https://static01.nyt.com/images/2020/04/06/business/04chris-cuomo
-/0405JPBENSMITH-print-superJumbo-v2.jpg?quality=75&auto=webp"/>
-                    </div>
-                </div><br/><br/><br/><br/>
-                <div class="wd-row wd-suggest-post">
-                    <div class="wd-post-left-col">
-                        <span class="wd-pos-left-16 wd-post-topic-info">COVID-19 · LIVE</span><br/>
-                        <span class="wd-pos-left-16 wd-post-title">COVID-19: News and updates for Massachusetts
-                </span>
-                    </div>
-                    <div class="wd-post-right-col">
-                        <img class="wd-post-photo" src="https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images
-/coronavirus-in-massachusetts-white-1587069227.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*"/>
-                    </div>
-                </div>
-                <div class="wd-row wd-suggest-post">
-                    <div class="wd-post-left-col">
-                        <img class="wd-pos-left-16 wd-logo-round-corner" height="12px"
-                             src="https://pbs.twimg.com/profile_images/991778099397320705/6LWXR6MS_400x400.jpg"/>
-                        <span class="wd-pos-left-16 wd-post-author">&nbsp Bloomberg Opinion &nbsp &nbsp &nbsp
-                </span>
-                        <img height="12px" src="check_logo.png"/>
-                        <span class="wd-post-topic-info"> · Yesterday</span>
-                        <br/>
-                        <span class="wd-pos-left-16 wd-post-title">Thinking about getting a booster? Read this
-                    first.
-                </span>
-                    </div>
-                    <div class="wd-post-right-col">
-                        <img class="wd-post-photo" src="https://www.ochd.org/wp-content/uploads/2021/10
-/COVID-19-BOOSTER-SHOTS-2-1200x675.jpg"/>
-                    </div>
-                </div>
-                <div class="wd-row wd-suggest-post">
-                    <div class="wd-post-left-col">
-                        <span class="wd-pos-left-16 wd-post-topic-info">Trending in United States</span><br/>
-                        <span class="wd-pos-left-16 wd-post-title">What is storm surge and why is it dangerous?
-                </span>
-                    </div>
-                    <div class="wd-post-right-col">
-                        <img class="wd-post-photo" src="https://www.nhc.noaa.gov/surge/images
-/stormsurgevsstormtide.jpg"/>
+
+                    <div class="row row-cols-12 m-0 position-relative border border-bottom-1">
+                        <div class="col-10 position-relative pt-2 pb-2">
+                            <span class="text-secondary">Web Development</span><br/>
+                            <span class="text-dark wd-weight-bold">NodeJS&nbsp;</span>
+                            <i class="fas fa-check-circle wd-weight-bold pb-1"></i>
+                            <span class="text-secondary">&nbsp;-&nbsp;2h</span><br/>
+                            <span class="text-secondary">123K&nbsp;Tweets</span>
+                        </div>
+                        <div class="col-2 position-relative pt-2">
+                            <img class="rounded-4 wd-post-photo mb-2"
+                                 src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377
+-seeklogo.com.png"/>
+                        </div>
                     </div>
                 </div>
-                <div class="wd-row wd-suggest-post">
-                    <div class="wd-post-left-col">
-                        <span class="wd-pos-left-16 wd-post-topic-info">Trending in United States</span><br/>
-                        <span class="wd-pos-left-16 wd-post-title">Wonder Bread</span><br/>
-                        <span class="wd-pos-left-16 wd-post-topic-info">1,259 Tuits</span>
-                    </div>
-                    <div class="wd-post-right-col">
-                        <span class="wd-dot">···</span>
-                    </div>
-                </div>
+            </div>
         </div>
-        <div class="col-lg-3 col-xl-4">
-            Who to follow
+
+<!--        <div class="col-2 col-sm-2 col-md-3 col-lg-1 col-xl-2">-->
+        <div class="col-lg-3 col-xl-4" id="who">
+            <div class="d-none d-lg-block">
+                Who to follow
+
+            </div>
         </div>
-    </div>
-
-
-
     </div>
 </div>
 </body>
