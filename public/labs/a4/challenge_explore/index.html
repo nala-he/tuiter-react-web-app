@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+    <title>A4 Challenge</title>
+<!--    <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>-->
+<!--    <script src="../../../vendors/bootstrap/js/bootstrap.min.js"></script>-->
+<!--    <link href="../../../vendors/fontawesome-6.2/css/all.css" rel="stylesheet"/>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body class="bg-black wd-floralwhite">
+<div class="container pt-2">
+    <div class="row">
+        <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
+            <div class="list-group" id="wd-navigation">
+                <span class="list-group-item list-group-item-action wd-list-group-style">
+                    <i class="fa-solid fa-t"></i><br/>
+                </span>
+                <a href="#" class="list-group-item list-group-item-action wd-list-group-style">
+                    <div class="row row-cols-2 pt-2 pb-2">
+                        <div class="col-1 d-flex align-items-center">
+                            <i class="fa-solid fa-house-chimney-window"></i>
+                        </div>
+                        <div class="col-1">
+                            <span class="d-none d-xl-block ps-1">Home</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action wd-weight-bold
+                 wd-list-group-style">
+                    <div class="row row-cols-2 pt-2 pb-2">
+                        <div class="col-1 d-flex align-items-center">
+                            <i class="fa fa-hashtag" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-1">
+                            <span class="d-none d-xl-block ps-1">Explore</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action wd-list-group-style">
+                    <div class="row row-cols-2 pt-2 pb-2">
+                        <div class="col-1 d-flex align-items-center">
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="col-1">
+                            <span class="d-none d-xl-block ps-1">Notifications</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action wd-list-group-style">
+                    <div class="row row-cols-2 pt-2 pb-2">
+                        <div class="col-1 d-flex align-items-center">
+                            <i class="fa-regular fa-envelope fa-inverse"></i>
+                        </div>
+                        <div class="col-1">
+                            <span class="d-none d-xl-block ps-1">Messages</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action
+wd-list-group-style">
+                    <div class="row row-cols-2 pt-2 pb-2">
+                        <div class="col-1 d-flex align-items-center">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="col-1">
+                            <span class="d-none d-xl-block ps-1">Bookmarks</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#"
+                   class="list-group-item list-group-item-action wd-list-group-style">
+                    <div class="row row-cols-2 pt-2 pb-2">
+                        <div class="col-1 d-flex align-items-center">
+                            <i class="fa-solid fa-list-ul"></i>
+                        </div>
+                        <div class="col-1">
+                            <span class="d-none d-xl-block ps-1">Lists</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action
+wd-list-group-style">
+                    <div class="row row-cols-2 pt-2 pb-2">
+                        <div class="col-1 d-flex align-items-center">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="col-1">
+                            <span class="d-none d-xl-block ps-1">Profile</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action rounded-bottom
+wd-list-group-style">
+                    <div class="row row-cols-2 pt-2 pb-2">
+                        <div class="col-1 d-flex align-items-center">
+                            <div class="fa-stack small position-relative">
+                                <i class="fa-regular fa-circle fa-stack-2x position-absolute"></i>
+                                <i class="fa-solid fa-ellipsis fa-stack-1x position-absolute ps-1
+                                pb-1"></i>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <span class="d-none d-xl-block ps-1">More</span>
+                        </div>
+                    </div>
+                </a>
+                <button type="button" href="#" class="wd-tweet-btn btn border-0 wd-rounded-border-5
+                mt-3 w-100 text-sm-center pt-2 pb-2">
+                    <span class="d-flex justify-content-center align-items-center wd-weight-bold">
+                        Tweet</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6">
+            <div id="wd-main-column" class="wd-border-sides">
+                <div class="form-group row row-cols-12 d-flex justify-content-center
+                align-items-center" id="wd-search-bar">
+                    <div class="col-11 position-relative">
+                        <button type="submit" class="rounded-5 wd-z-index
+                        position-absolute ms-2 mt-1 bg-transparent border-0" href="#">
+                            <i class="fa fa-search form-control-feedback"></i>
+                        </button>
+                        <input type="text" class="form-control form-control-md wd-rounded-border-5
+                        position-relative ps-5 pt-2 pb-2 border-0" placeholder="Search Twitter">
+                    </div>
+                    <div class="col-1 position-relative">
+                        <a href="explore-settings.html">
+                            <i class="fa-solid fa-gear fa-1x btn-close-white float-end"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-2" id="wd-nav-bar">
+                    <ul class="nav justify-content-xxl-evenly d-flex flex-nowrap">
+                        <li class="nav-item">
+                            <div class="d-none d-xxl-block">
+                                <a class="nav-link" href="for-you.html">
+                                    <span class="align-content-center wd-weight-bold">For you
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="d-block d-xxl-none">
+                                <a class="nav-link" href="for-you.html">
+                                    <span class="wd-font-sm align-content-center wd-weight-bold">
+                                        For you</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-none d-xxl-block">
+                                <a class="nav-link" href="trending.html">
+                                    <span class="align-content-center wd-weight-bold">Trending
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="d-block d-xxl-none">
+                                <a class="nav-link" href="trending.html">
+                                    <span class="wd-font-sm align-content-center wd-weight-bold">
+                                        Trending</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-none d-xxl-block">
+                                <a class="nav-link" href="#">
+                                    <span class="align-content-center wd-weight-bold">COVID-19
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="d-block d-xxl-none">
+                                <a class="nav-link" href="#">
+                                    <span class="wd-font-sm align-content-center wd-weight-bold">
+                                        COVID-19</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-none d-xxl-block">
+                                <a class="nav-link" href="news.html">
+                                    <span class="align-content-center wd-weight-bold">News
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="d-block d-xxl-none">
+                                <a class="nav-link" href="news.html">
+                                    <span class="wd-font-sm align-content-center wd-weight-bold">
+                                        News</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-none d-xxl-block">
+                                <a class="nav-link" href="sports.html">
+                                    <span class="align-content-center wd-weight-bold">Sports
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="d-block d-xxl-none">
+                                <a class="nav-link" href="sports.html">
+                                    <span class="wd-font-sm align-content-center wd-weight-bold">
+                                        Sports</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <div class="d-none d-xxl-block">
+                                <a class="nav-link" href="entertainment.html">
+                                    <span class="wd-nav-selected wd-weight-bold">Entertainment
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="d-block d-xxl-none">
+                                <a class="nav-link" href="entertainment.html">
+                                    <span class="wd-nav-selected wd-weight-bold wd-font-sm">
+                                        Entertainment</span>
+                                </a>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-2" id="wd-posts">
+                    <div class="position-relative wd-border-top-bottom">
+                        <img src="https://bgr.com/wp-content/uploads/2021/09/coldplay-bts-my
+-universe-single-1.jpg?quality=82&strip=all&w=1440&h=801&crop=1" width="100%"/>
+                        <div class="position-absolute bottom-0 ps-3 pb-1 pe-3
+                        wd-z-index">
+                            <span>Music · Last night</span><br/>
+                            <div class="d-none d-md-block">
+                                <span class="wd-font-lg wd-weight-bold">
+                                    BTS and Coldplay release their new song, My Universe</span>
+                                <img class="wd-lg-icon-size position-relative mb-2"
+                                     src="https://cdn-icons-png.flaticon.com/512/1751/1751904.png"/>
+                            </div>
+                            <div class="d-block d-md-none">
+                                <span class="wd-font-md wd-weight-bold">
+                                    BTS and Coldplay release their new song, My Universe</span>
+                                <img class="wd-icon-size position-relative mb-1"
+                                     src="https://cdn-icons-png.flaticon.com/512/1751/1751904.png"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-12 mt-2 mb-2 ps-3 pe-3 position-relative">
+                        <div class="col-10 position-relative pt-2 pb-2">
+                            <span class="text-secondary">Trending in R&B & soul</span><br/>
+                            <span class="wd-floralwhite wd-weight-bold">R Kelly</span><br/>
+                            <span class="text-secondary">18.2K Tweets</span><br/>
+                        </div>
+                        <div class="col-2 position-relative pt-2">
+                            <span class="float-end position-relative mt-2 wd-weight-bold
+                            text-secondary">···</span>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-12 mt-2 mb-2 ps-3 pe-3 position-relative">
+                        <div class="col-10 position-relative pt-2 pb-2">
+                            <span class="text-secondary">Trending in R&B & soul</span><br/>
+                            <span class="wd-floralwhite wd-weight-bold">Chloe</span><br/>
+                            <span class="text-secondary">Trending with&nbsp;</span>
+                            <span class="wd-tweet-blue">Halle</span><br/>
+                        </div>
+                        <div class="col-2 position-relative pt-2">
+                            <span class="float-end position-relative mt-2 wd-weight-bold
+                            text-secondary">···</span>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-12 mt-2 mb-2 ps-3 pe-3 position-relative rounded-bottom">
+                        <div class="col-10 position-relative pt-2 pb-2">
+                            <img class="wd-icon-size"
+                                 src="https://pbs.twimg.com/profile_images/859978618600017920
+/MLTNuiha_400x400.jpg"/>
+                            <span class="wd-floralwhite">&nbsp;The Times</span>
+                            <i class="fas fa-check-circle wd-weight-bold mb-1"></i>
+                            <span class="text-secondary">&nbsp;·&nbsp;September 24, 2021</span><br/>
+                            <span class="wd-floralwhite wd-weight-bold">Stanley Tucci: 'Food or sex?
+                                That's the cruellest question...'</span>
+                        </div>
+                        <div class="col-2 position-relative pt-2">
+                            <img class="rounded-4 float-end position-relative mb-2
+                            wd-width-limits wd-square-shape"
+                                 src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode
+%2Ftimes%2Fprod%2Fweb%2Fbin%2F57c69e84-1d45-11ec-95b9-6429167b0259.jpg?crop
+=4711%2C3141%2C3411%2C1120"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-xl-4">
+            <div class="d-none d-lg-block" id="who">
+                <ul class="list-group rounded-4">
+                    <li class="list-group-item">
+                        <h3 class="wd-weight-bold">Who to follow</h3>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row row-cols-12 d-flex justify-content-center
+                        align-items-center">
+                            <div class="col-lg-2">
+                                <img class="w-100 rounded-5 d-flex justify-content-center
+                                wd-min-width-40"
+                                     src="https://play-lh.googleusercontent.com
+/hASW52gah5M66DO3K5Vw1AOiv5wbgZWofQ5cFIDJfD67f8w2jZRtcIGR4FXeNZucNjQ"/>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="d-none d-xl-block">
+                                    <span class="wd-weight-bold">The&nbsp;Babylon&nbsp;Bee&nbsp;</span>
+                                    <i class="fas fa-check-circle wd-weight-bold mb-1
+                                    position-relative wd-z-index"></i><br/>
+                                    <span class="text-secondary">@TheBabylonBee</span>
+                                </div>
+                                <div class="d-block d-xl-none">
+                                    <span class="wd-weight-bold wd-font-md">
+                                        The&nbsp;Babylon&nbsp;Bee</span>
+                                    <i class="fas fa-check-circle wd-weight-bold mb-1
+                                    position-relative wd-z-index"></i><br/>
+                                    <span class="text-secondary wd-font-md">@TheBabylonBee</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="button" class="btn btn-md btn-primary float-end
+                                wd-rounded-border-5" href="#">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row row-cols-12 d-flex justify-content-center
+                        align-items-center">
+                            <div class="col-lg-2">
+                                <img class="w-100 rounded-5 d-flex justify-content-center
+                                wd-min-width-40"
+                                     src="https://2sai80zhft74386rl1kqxhyw-wpengine.netdna-ssl.com
+/wp-content/uploads/2021/08/Jack-Posobiec-Headshot.jpg"/>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="d-none d-xl-block">
+                                    <span class="wd-weight-bold">Jack&nbsp;Posobiec&nbsp;</span>
+                                    <img class="wd-icon-size mb-1"
+                                         src="https://flagicons.lipis.dev/flags/4x3/us.svg"/>
+                                    <i class="fas fa-check-circle wd-weight-bold ms-1 mb-1
+                                    wd-z-index position-relative"></i>
+                                    <br/>
+                                    <span class="text-secondary">@JackPosobiec</span>
+                                </div>
+                                <div class="d-block d-xl-none">
+                                    <span class="wd-weight-bold wd-font-md">Jack&nbsp;Posobiec</span>
+                                    <img class="wd-icon-size mb-1"
+                                         src="https://flagicons.lipis.dev/flags/4x3/us.svg"/>
+                                    <i class="fas fa-check-circle wd-weight-bold mb-1 wd-z-index
+                                position-relative"></i>
+                                    <br/>
+                                    <span class="text-secondary wd-font-md">@JackPosobiec</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="button" class="btn btn-md btn-primary float-end
+                                wd-rounded-border-5" href="#">Follow</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#"><span class="wd-tweet-blue">Show more</span></a>
+                    </li>
+                </ul>
+                <ul class="wd-footer-info mt-2 ps-3">
+                    <li>
+                        <a href="#"><span class="text-secondary">
+                            &nbsp;Terms&nbsp;of&nbsp;Service&nbsp;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <span class="text-secondary">&nbsp;Privacy&nbsp;Policy&nbsp;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text-secondary">&nbsp;Cookie&nbsp;Policy&nbsp;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text-secondary">&nbsp;Ads&nbsp;info&nbsp;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text-secondary">&nbsp;More...&nbsp;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text-secondary">&nbsp;&#169;2021&nbsp;Twitter,
+                            &nbsp;Inc.&nbsp;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

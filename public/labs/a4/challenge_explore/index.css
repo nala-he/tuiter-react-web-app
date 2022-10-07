@@ -1,0 +1,132 @@
+
+/** {*/
+/*    outline: 1px solid red;*/
+/*}*/
+
+.fa-stack.small { font-size: 0.45em; }
+i { vertical-align: middle; }
+
+.wd-rounded-border-5 {
+    border-radius: 5rem;
+}
+
+.wd-z-index {
+    z-index: 10;
+}
+
+.wd-weight-bold {
+    font-weight: bold;
+}
+
+.wd-min-width-40 {
+    min-width: 40px;
+}
+
+.wd-width-limits {
+    min-width: 70px;
+    max-width: 80px;
+}
+
+.wd-square-shape {
+    width: 80px;
+    height: 80px;
+}
+
+.wd-list-group-style {
+    background-color: black;
+    color: floralwhite;
+    border: 0;
+}
+
+.wd-tweet-blue {
+    color: rgb(29,161,242);
+}
+
+.wd-tweet-btn {
+    background-color: rgb(29,161,242);
+    color: floralwhite;
+}
+
+.fa-search {
+    background-color: #282828;
+    color: gray;
+}
+
+#wd-search-bar {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#wd-search-bar input {
+    background-color: #282828;
+    color: gray;
+}
+
+.nav-item a {
+    color: gray;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+.wd-nav-selected {
+    color: floralwhite;
+    padding-bottom: 9px;
+    border-bottom: 3px solid rgb(29,161,242);
+    border-radius: 2px;
+}
+
+.wd-border-sides {
+    border-right: 1px solid rgb(47, 51, 54);
+    border-left: 1px solid rgb(47, 51, 54);
+}
+
+.wd-border-top-bottom {
+    border-top: 1px solid rgb(47, 51, 54);
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.wd-icon-size {
+    height: 15px;
+}
+
+.wd-lg-icon-size {
+    width: 25px;
+}
+
+#who .list-group-item {
+    background-color: #181c1c;
+    color: floralwhite;
+}
+
+#who button {
+    background-color: floralwhite;
+    font-weight: bold;
+    color: #181c1c;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wd-font-lg {
+    font-size: 22pt;
+}
+
+.wd-font-md {
+    font-size: 11pt;
+}
+
+.wd-font-sm {
+    font-size: 9pt;
+}
+
+.wd-floralwhite {
+    color: floralwhite;
+}
+
+.wd-footer-info li {
+    list-style: none;
+    display: inline;
+}
