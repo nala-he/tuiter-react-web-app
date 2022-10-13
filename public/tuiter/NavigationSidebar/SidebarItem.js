@@ -1,15 +1,33 @@
-const SidebarItem = (items) => {
+const SidebarItem = (item) => {
+    if (item.text === "Explore") {
+        return(`
+            <li class="list-group-item list-group-item-action active">
+                <a href="#">
+                    <div class="row row-cols-2">
+                        <div class="col-1 d-flex align-items-center">
+                            ${item.icon}
+                        </div>
+                        <div class="col-1">
+                            <span class="d-none d-xl-block">${item.text}</span>
+                        </div>
+                    </div> 
+                </a>
+            </li>
+        `);
+    }
     return(`
-        <a href="#" className="list-group list-group-item list-group-item-action">
-            <div className="row row-cols-2">
-                <div className="col-1 d-flex align-items-center">
-                    ${items.icon}
-                </div>
-                <div className="col-1">
-                    <span class="d-none d-xl-block">${items.text}</span>
-                </div>
-            </div>
-        </a>
+        <li class="list-group-item list-group-item-action">
+            <a href="#">
+                <div class="row row-cols-2">
+                    <div class="col-1 d-flex align-items-center">
+                        ${item.icon}
+                    </div>
+                    <div class="col-1">
+                        <span class="d-none d-xl-block">${item.text}</span>
+                    </div>
+                </div> 
+            </a>
+        </li>
     `);
 }
 export default SidebarItem;

@@ -17,7 +17,7 @@ const ExploreComponent = () => {
         <div class="position-relative">
             <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day
 .jpg?w=1390&crop=1" width="100%"/>
-            <h3 class="wd-gray position-absolute bottom-0 ps-1 wd-z-index">
+            <h3 class="text-light position-absolute bottom-0 ps-1 wd-z-index">
                 SpaceX's Starship
             </h3>
         </div>    

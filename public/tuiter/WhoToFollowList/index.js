@@ -19,8 +19,8 @@ const WhoToFollowList = () => {
 }
 export default WhoToFollowList;
 
-// $('#wd-who-to-follow').append(`
-//    <div class="container pt-2">
-//        ${WhoToFollowList()}
-//    </div>
-// `);
+$('#wd-who-to-follow').append(`
+   <div class="container pt-2">
+       ${WhoToFollowList()}
+   </div>
+`);
