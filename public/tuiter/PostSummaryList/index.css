@@ -25,3 +25,16 @@ i { vertical-align: middle; }
     min-width: 70px;
     max-width: 90px;
 }
+
+.wd-border-top {
+    border-top: 1px solid rgb(47, 51, 54);
+}
+
+.wd-border-bottom {
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.wd-border-sides {
+    border-right: 1px solid rgb(47, 51, 54);
+    border-left: 1px solid rgb(47, 51, 54);
+}
