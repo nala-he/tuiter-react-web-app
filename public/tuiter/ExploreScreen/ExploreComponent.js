@@ -14,7 +14,7 @@ const ExploreComponent = () => {
             ${Tabs()}
         </ul>
             <!-- image with overlaid text -->
-        <div class="position-relative">
+        <div class="position-relative mb-2">
             <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day
 .jpg?w=1390&crop=1" width="100%"/>
             <h3 class="text-light position-absolute bottom-0 ps-1 wd-z-index">

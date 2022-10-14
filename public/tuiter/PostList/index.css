@@ -30,3 +30,13 @@ i { vertical-align: middle; }
     min-width: 70px;
     max-width: 90px;
 }
+
+.wd-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+}
+
+.wd-icon-size {
+    width: 20px;
+}
