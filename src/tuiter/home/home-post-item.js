@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 function ContentLink(content, link, _id) {
     const words = content.split(' ');
@@ -7,9 +8,9 @@ function ContentLink(content, link, _id) {
             {
                 words.map(word => {
                     return word === link ? (
-                        <div key={_id}>
-                            <a href={link}>{link}</a> {' '}
-                        </div>) : (word + ' ');
+                        <span key={_id}>
+                            <Link to={link}>{link}</Link> {' '}
+                        </span>) : (word + ' ');
                 })
             }
         </>

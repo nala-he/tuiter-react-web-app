@@ -1,6 +1,7 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
+import {Link} from "react-router-dom";
 
 const ExploreComponent = () => {
     return(
@@ -16,28 +17,28 @@ const ExploreComponent = () => {
             position-relative ps-5" placeholder="Search Twitter"/>
                 </div>
                 <div className="col-1 position-relative">
-                    <a href="explore-settings.html">
+                    <Link to="/tuiter/explore/explore-settings">
                         <i className="bi bi-gear-fill fs-4 float-end text-primary bg-transparent">
 
                         </i>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <ul className="nav mb-2 mt-2 nav-tabs">
                 <li className="nav-item">
-                    <a className="nav-link active" href="for-you.html">For you</a>
+                    <Link className="nav-link active" to="/tuiter/explore/for-you">For you</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="trending.html">Trending</a>
+                    <Link className="nav-link" to="/tuiter/explore/trending">Trending</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="news.html">News</a>
+                    <Link className="nav-link" to="/tuiter/explore/news">News</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="sports.html">Sports</a>
+                    <Link className="nav-link" to="/tuiter/explore/sports">Sports</Link>
                 </li>
                 <li className="nav-item d-none d-md-block">
-                    <a className="nav-link" href="entertainment.html">Entertainment</a>
+                    <Link className="nav-link" to="/tuiter/explore/entertainment">Entertainment</Link>
                 </li>
             </ul>
             <div className="position-relative mb-2">

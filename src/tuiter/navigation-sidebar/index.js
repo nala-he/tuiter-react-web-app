@@ -2,6 +2,7 @@ import React from "react";
 import NavigationSidebarItem from "./navigation-sidebar-item";
 import itemsArray from "./item.json";
 import {useLocation} from "react-router";
+import {Link} from "react-router-dom";
 
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
@@ -21,8 +22,8 @@ const NavigationSidebar = () => {
                 }
             </div>
             <div className="d-grid mt-2">
-                <a href="tweet.html"
-                   className="btn btn-primary btn-block rounded-pill">Tweet</a>
+                <Link to="/tuiter/tweet"
+                   className="btn btn-primary btn-block rounded-pill">Tweet</Link>
             </div>
         </>
     );
