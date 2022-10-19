@@ -1,0 +1,14 @@
+/** {*/
+/*    outline: 1px solid red;*/
+/*}*/
+
+.wd-link-no-decor a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wd-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+}

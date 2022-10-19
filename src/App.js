@@ -15,7 +15,7 @@ function App() {
                   <Route path="/hello"
                          element={<HelloWorld/>}>
                   </Route>
-                  <Route path="/tuiter"
+                  <Route path="/tuiter/*"
                          element={<Tuiter/>}>
                   </Route>
               </Routes>

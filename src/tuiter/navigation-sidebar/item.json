@@ -2,41 +2,46 @@
   { "_id": 123,
     "icon": "bi bi-house-fill",
     "text": "Home",
-    "link": "#"
+    "link": "/tuiter/home"
   },
   { "_id": 124,
     "icon": "bi bi-hash",
     "text": "Explore",
-    "link": "#"
+    "link": "/tuiter/explore"
+  },
+  { "_id": 131,
+    "icon": "bi bi-folder-fill",
+    "text": "Labs",
+    "link": "/"
   },
   { "_id": 125,
     "icon": "bi bi-bell-fill",
     "text": "Notifications",
-    "link": "#"
+    "link": "/tuiter/notifications"
   },
   { "_id": 126,
     "icon": "bi bi-envelope-fill",
     "text": "Messages",
-    "link": "#"
+    "link": "/tuiter/messages"
   },
   { "_id": 127,
     "icon": "bi bi-bookmark-fill",
     "text": "Bookmarks",
-    "link": "#"
+    "link": "/tuiter/bookmarks"
   },
   { "_id": 128,
     "icon": "bi bi-list-ul",
     "text": "Lists",
-    "link": "#"
+    "link": "/tuiter/lists"
   },
   { "_id": 129,
     "icon": "bi bi-person-fill",
     "text": "Profile",
-    "link": "#"
+    "link": "/tuiter/profile"
   },
   { "_id": 130,
     "icon": "bi bi-circle-fill",
     "text": "More",
-    "link": "#"
+    "link": "/tuiter/more"
   }
 ]

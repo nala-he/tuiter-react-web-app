@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const NavigationSidebarItem = (
     {
@@ -7,13 +8,13 @@ const NavigationSidebarItem = (
             _id: 124,
             icon: "bi bi-hash",
             text: "Explore",
-            link: "#"
+            link: "/tuiter/explore"
         }
     }
 ) => {
     return (
-        <a href={item.link} className={`list-group-item
-        ${active === item.text.toLowerCase() ? 'active' : ''}`}>
+        <Link to={item.link} className={`list-group-item
+    ${active === item.text.toLowerCase() ? 'active' : ''}`}>
             <div className="row row-cols-2">
                 <div className="col-1 d-flex align-items-center">
                     <i className={`${item.icon}`}> </i>
@@ -22,7 +23,7 @@ const NavigationSidebarItem = (
                     <span className="d-none d-xl-block">{item.text}</span>
                 </div>
             </div>
-        </a>
+        </Link>
     );
 };
 export default NavigationSidebarItem;

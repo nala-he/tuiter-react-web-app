@@ -1,12 +1,14 @@
 import React from "react";
 import NavigationSidebarItem from "./navigation-sidebar-item";
 import itemsArray from "./item.json";
+import {useLocation} from "react-router";
 
-const NavigationSidebar = (
-    {
-        active = 'explore'
-    }
-) => {
+const NavigationSidebar = () => {
+    const {pathname} = useLocation();
+    const paths = pathname.split('/');
+    const active = (paths.length > 2 && paths[2] !== '') ? paths[2] : 'explore';
+    console.log(paths[2]);
+
     return (
         <>
             <div className="list-group">
