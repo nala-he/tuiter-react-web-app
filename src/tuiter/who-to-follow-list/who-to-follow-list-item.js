@@ -6,7 +6,7 @@ const WhoToFollowListItem = (
 ) => {
     return(
         <li className="list-group-item">
-            <div className="row">
+            <div className="row d-flex justify-content-center align-items-center">
                 <div className="col-2">
                     <img className="rounded-circle" height={48} src={`/images/${who.avatarIcon}`}/>
                 </div>
