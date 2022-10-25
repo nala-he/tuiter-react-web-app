@@ -8,7 +8,6 @@ const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/');
     const active = (paths.length > 2 && paths[2] !== '') ? paths[2] : 'explore';
-    console.log(paths[2]);
 
     return (
         <>
