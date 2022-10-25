@@ -23,6 +23,8 @@ const Todos = () => {
         };
         setTodo(newTodo);
     }
+    // Above equivalent to below:
+    // const todoChangeHandler = (event) => setTodo({do: event.target.value});
 
     return(
         <>
