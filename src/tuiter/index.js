@@ -23,11 +23,10 @@ function Tuiter() {
             </div>
             <div className="d-none d-lg-block col-lg-4 col-xl-4">
                 <Routes>
-                    <Route path="home" element={<PostSummaryList/>}/>
+                    <Route path="home" element={<WhoToFollowList/>}/>
                     <Route path="explore" element={<WhoToFollowList/>}/>
                     <Route index element={<WhoToFollowList/>}/>
                 </Routes>
-
             </div>
         </div>
     );
