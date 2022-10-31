@@ -7,13 +7,18 @@ import {Link} from "react-router-dom";
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/');
-    const active = (paths.length > 2 && paths[2] !== '') ? paths[2] : 'explore';
+    const active = (paths.length > 2 && paths[2] !== '') ? paths[2] : 'home';
 
     return (
         <>
             <div className="list-group">
                 <a className="list-group-item" href="/">
-                    <i className="bi bi-twitter"> </i>
+                    <div className="d-block d-sm-none d-lg-block d-xl-none">
+                        <span className="small ps-0">Tuiter</span>
+                    </div>
+                    <div className="d-none d-sm-block d-lg-none d-xl-block">
+                        <span>Tuiter</span>
+                    </div>
                 </a>
                 {
                     itemsArray.map(item => <NavigationSidebarItem

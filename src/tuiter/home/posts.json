@@ -1,6 +1,6 @@
 [
   { "_id": 321,
-    "avatar": "../../images/avatar_elon.jpg",
+    "avatar": "/images/avatar_elon.jpg",
     "author": "Elon Musk",
     "handler": "@elonmusk",
     "time": "23h",
@@ -15,7 +15,7 @@
     "like": "37.5K"
   },
   { "_id": 322,
-    "avatar": "../../images/avatar_nypost.jpeg",
+    "avatar": "/images/avatar_nypost.jpeg",
     "author": "New York Post",
     "handler": "@nypost",
     "time": "23h",

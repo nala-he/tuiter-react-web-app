@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 const ExploreComponent = () => {
     return(
-        <>
+        <div className="mt-2 mb-2">
             <div className="form-group row row-cols-12 d-flex justify-content-center
             align-items-center" id="wd-search-bar">
                 <div className="col-11 position-relative">
@@ -49,7 +49,7 @@ const ExploreComponent = () => {
                 </h3>
             </div>
             <PostSummaryList/>
-        </>
+        </div>
     );
 };
 export default ExploreComponent;

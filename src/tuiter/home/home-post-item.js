@@ -16,7 +16,6 @@ function ContentLink(content, link, _id) {
         </>
     );
 }
-
 const HomePostItem = (
     {
         post = {
@@ -41,32 +40,34 @@ const HomePostItem = (
     const content = ContentLink(post.content, post.link, post._id);
 
     return (
-        <div className="row row-cols-12 m-0 border-bottom border-light">
+        <div className="row row-cols-12 border border-top-0">
             <div className="col-2 pt-2">
-                <img className="wd-avatar float-end" src={post.avatar}/>
+                <img className="wd-avatar float-end" src={post.avatar} alt="avatar"/>
             </div>
             <div className="col-10 pt-2">
                 <div>
-                    <span className="text-white wd-weight-bold">{post.author} </span>
-                    <i className="bi bi-patch-check-fill text-white"> </i>
-                    <span className="wd-bookmarked-handle">
+                    <span className="text-black fw-bolder">{post.author} </span>
+                    <i className="bi bi-patch-check-fill text-primary"> </i>
+                    <span className="text-secondary">
                          {post.handler} · {post.time}
                     </span>
-                    <span className="float-end position-relative wd-weight-bold">···</span>
+                    <span className="float-end position-relative fw-bolder text-secondary">···</span>
                 </div>
-                <span className="text-white">{content}</span>
-                <div className="card bg-transparent border-1 border-light rounded-4 mb-2 mt-2">
-                    <img className="card-img-top border-1 rounded-4"
+                <span className="text-black">{content}</span>
+                <div className="card bg-transparent border rounded-4 mb-2 mt-2">
+                    <img className={`card-img-top ${post.title === '' && post.text === '' 
+                                                    && post.source === '' 
+                                                    ? 'rounded-4' : 'wd-rounded-top-4'}`}
                          src={post.photo} alt="Card image cap"/>
-                    <div className={`p-3 card-body border-top border-light
+                    <div className={`p-3 card-body border-top
 ${post.title === '' && post.text === '' && post.source === '' ? 'd-none' : ''}`}>
-                        <span className="card-title text-white">{post.title}</span><br/>
-                        <span className="card-text">{post.text}</span><br/>
+                        <span className="card-title text-black">{post.title}</span><br/>
+                        <span className="card-text text-secondary">{post.text}</span><br/>
                         <i className="bi bi-link-45deg"> </i>
                         <span className="text-secondary"> {post.source}</span>
                     </div>
                 </div>
-                <div className="row row-cols-12 mt-3 mb-3 wd-link-no-decor">
+                <div className="row row-cols-12 mt-3 mb-3 wd-link-no-decor text-secondary">
                     <div className="col-3">
                         <a href="#">
                             <i className="bi bi-chat"> </i>

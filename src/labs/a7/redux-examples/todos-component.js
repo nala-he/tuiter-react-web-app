@@ -15,7 +15,6 @@ const Todos = () => {
     const createTodoClickHandler = () => {
         dispatch(addTodo(todo))
     }
-
     const todoChangeHandler = (event) => {
         const doValue = event.target.value;
         const newTodo = {

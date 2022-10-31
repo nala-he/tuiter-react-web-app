@@ -1,8 +1,8 @@
 [
   { "_id": 123,
-    "icon": "bi bi-house-fill",
+    "icon": "bi bi-house-door-fill",
     "text": "Home",
-    "link": "/tuiter/home"
+    "link": "/tuiter"
   },
   { "_id": 124,
     "icon": "bi bi-hash",
@@ -10,37 +10,37 @@
     "link": "/tuiter/explore"
   },
   { "_id": 131,
-    "icon": "bi bi-folder-fill",
+    "icon": "bi bi-asterisk",
     "text": "Labs",
     "link": "/"
   },
   { "_id": 125,
-    "icon": "bi bi-bell-fill",
+    "icon": "bi bi-bell",
     "text": "Notifications",
     "link": "/tuiter/notifications"
   },
   { "_id": 126,
-    "icon": "bi bi-envelope-fill",
+    "icon": "bi bi-envelope",
     "text": "Messages",
     "link": "/tuiter/messages"
   },
   { "_id": 127,
-    "icon": "bi bi-bookmark-fill",
+    "icon": "bi bi-bookmark",
     "text": "Bookmarks",
     "link": "/tuiter/bookmarks"
   },
   { "_id": 128,
-    "icon": "bi bi-list-ul",
+    "icon": "bi bi-card-list",
     "text": "Lists",
     "link": "/tuiter/lists"
   },
   { "_id": 129,
-    "icon": "bi bi-person-fill",
+    "icon": "bi bi-person",
     "text": "Profile",
     "link": "/tuiter/profile"
   },
   { "_id": 130,
-    "icon": "bi bi-circle-fill",
+    "icon": "bi bi-three-dots",
     "text": "More",
     "link": "/tuiter/more"
   }
