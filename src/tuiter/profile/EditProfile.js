@@ -7,12 +7,14 @@ import {updateProfile} from "./profile-reducer";
 const EditProfile = () => {
     const profile = useSelector(state => state.profile);
     let [showEdit, setShowEdit] = useState(false);
-    let [newProfile, setProfile] = useState(profile);
+    let [editedProfile, setEditedProfile] = useState(profile);
+
+    // let [updatedProfile, setUpdatedProfile] = useState(editedProfile);
     let [newName, setName] = useState(profile.firstName + " " + profile.lastName);
     const dispatch = useDispatch();
 
     const saveClickHandler = () => {
-        dispatch(updateProfile(newProfile));
+        dispatch(updateProfile(editedProfile));
     }
 
     const birthdayOptions = {
@@ -53,7 +55,7 @@ const EditProfile = () => {
                     <input className="form-control border-0 ps-2" id="name"
                            onChange={(e) => {
                                setName(e.target.value);
-                               setProfile({...profile,
+                               setEditedProfile({...editedProfile,
                                                  firstName: e.target.value.split(" ")[0],
                                                  lastName: e.target.value.split(" ")[1]
                                })
@@ -66,29 +68,29 @@ const EditProfile = () => {
                     <textarea className="form-control border-0 ps-2 wd-textarea"
                               id="bio" rows={3}
                               onChange={(e) => {
-                                  setProfile({...profile, bio: e.target.value})
+                                  setEditedProfile({...editedProfile, bio: e.target.value})
                               }}
-                              value={newProfile.bio}/>
+                              value={editedProfile.bio}/>
                 </div>
                 <div className="form-group border rounded mb-4">
                     <label className="text-secondary ps-2 pt-1" htmlFor="location">Location</label>
                     <input className="form-control border-0 ps-2" id="location"
                            onChange={(e) =>
-                           {setProfile({
-                                           ...profile,
-                                           location: e.target.value})
+                               {setEditedProfile({
+                                               ...editedProfile,
+                                               location: e.target.value})
+                               }
                            }
-                           }
-                           value={newProfile.location}
+                           value={editedProfile.location}
                     />
                 </div>
                 <div className="form-group border rounded mb-4">
                     <input className="form-control border-0 ps-2 pt-3 pb-3" id="website"
                            placeholder="Website"
                            onChange={(e) => {
-                               setProfile({...profile, website: e.target.value})
+                               setEditedProfile({...editedProfile, website: e.target.value})
                            }}
-                           value={newProfile.website}/>
+                           value={editedProfile.website}/>
                 </div>
                 <div className="form-group mb-4">
                     <div className="d-flex align-items-center mb-2">
@@ -102,13 +104,13 @@ const EditProfile = () => {
                         {
                             showEdit ? <input className="me-3 form-control border p-0"
                                               onChange={(e) => {
-                                                  setProfile({...profile,
+                                                  setEditedProfile({...editedProfile,
                                                                  dateOfBirth: e.target.value})
                                               }}
-                                              value={newProfile.dateOfBirth}/>
+                                              value={editedProfile.dateOfBirth}/>
                                      : <span className="me-3 border-0 p-0">
                                             {
-                                                new Date(newProfile.dateOfBirth)
+                                                new Date(editedProfile.dateOfBirth)
                                                 .toLocaleString('en-US',
                                                 birthdayOptions)
                                             }
