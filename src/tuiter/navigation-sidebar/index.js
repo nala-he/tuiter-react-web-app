@@ -7,7 +7,8 @@ import {Link} from "react-router-dom";
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/');
-    const active = (paths.length > 2 && paths[2] !== '') ? paths[2] : 'home';
+    let active = (paths.length > 2 && paths[2] !== '') ? paths[2] : 'home';
+    active = active.includes('profile') ? 'profile' : active;
 
     return (
         <>
