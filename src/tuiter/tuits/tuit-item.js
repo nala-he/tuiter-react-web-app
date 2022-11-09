@@ -1,7 +1,7 @@
 import React from "react";
-import TuitStats from "./TuitStats";
+import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
     {
@@ -16,6 +16,7 @@ const TuitItem = (
             "replies": 123,
             "retuits": 432,
             "likes": 2345,
+            "dislikes": 0,
             "handle": "@spacex",
             "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
         }
@@ -23,11 +24,12 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return (
-        <div className="row row-cols-12 m-0 pt-2 border-bottom">
+        <li className="list-group-item">
+        <div className="row row-cols-12 m-0 pt-2">
             <div className="col-2 d-flex justify-content-center">
                 <img className="wd-avatar"
                      src={`/images/${tuit.image}`} alt="avatar"/>
@@ -50,6 +52,7 @@ const TuitItem = (
                 </div>
             </div>
         </div>
+        </li>
     );
 };
 export default TuitItem;
