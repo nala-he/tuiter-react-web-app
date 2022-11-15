@@ -16,33 +16,33 @@ const TuitStats = (
 
     return (
         <div className="row row-cols-12 mt-3 mb-2 wd-link-no-decor text-secondary">
-            <div className="col-2">
+            <div className="col-3">
                 <a href="#">
                     <i className="bi bi-chat"> </i>
                     <span> {tuit.replies}</span>
                 </a>
             </div>
-            <div className="col-2">
+            <div className="col-3">
                 <a href="#">
                     <i className="bi bi-arrow-repeat"> </i>
                     <span> {tuit.retuits}</span>
                 </a>
             </div>
             <div className="col-3">
-                Likes: {tuit.likes}
                 <i onClick={() => dispatch(updateTuitThunk({
                                                                ...tuit,
                                                                likes: tuit.likes + 1
                                                            }))}
                    className="bi bi-heart-fill text-danger"> </i>
+                {tuit.likes}
             </div>
-            <div className="col-3">
-                Dislikes: {tuit.dislikes}
+            <div className="col-2">
                 <i onClick={() => dispatch(updateTuitThunk({
                                                                ...tuit,
                                                                dislikes: tuit.dislikes + 1
                                                            }))}
                    className="bi bi-hand-thumbs-down"> </i>
+                {tuit.dislikes}
             </div>
             <div className="col-1">
                 <a href="#">
