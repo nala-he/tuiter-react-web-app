@@ -22,18 +22,12 @@ const WhatsHappening = () => {
     }
     const dispatch = useDispatch();
 
-    // refresh page after created a new tuit
-    const refreshPage = ()=>{
-        window.location.reload();
-    }
-
     const tuitClickHandler = () => {
         const newTuit = {
             ...templateTuit,
             tuit: whatsHappening
         }
         dispatch(createTuitThunk(newTuit));
-        refreshPage();
     }
     const tuitChangeHandler = (event) => {
         setWhatsHappening(event.target.value)
