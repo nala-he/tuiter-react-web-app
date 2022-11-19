@@ -3,6 +3,7 @@ import {useDispatch} from "react-redux";
 import {createTuitThunk} from "../../services/tuits-thunks";
 
 const WhatsHappening = () => {
+
     let [whatsHappening, setWhatsHappening] = useState('');
     const currentUser = {
         "userName": "NASA",
@@ -20,12 +21,19 @@ const WhatsHappening = () => {
         "dislikes": 0
     }
     const dispatch = useDispatch();
+
+    // refresh page after created a new tuit
+    const refreshPage = ()=>{
+        window.location.reload();
+    }
+
     const tuitClickHandler = () => {
         const newTuit = {
             ...templateTuit,
             tuit: whatsHappening
         }
         dispatch(createTuitThunk(newTuit));
+        refreshPage();
     }
     const tuitChangeHandler = (event) => {
         setWhatsHappening(event.target.value)
